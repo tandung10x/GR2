@@ -1,1 +1,1 @@
-# GR2
+# GR2 - Puzzle Game
