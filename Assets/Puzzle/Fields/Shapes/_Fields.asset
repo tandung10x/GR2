@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 838f0c1e67d3b51488cbd4497a5c636c, type: 3}
+  m_Name: _Fields
+  m_EditorClassIdentifier: 
+  fields:
+  - openState: 0
+    name: rectangle
+    shape: 1
+    field: {fileID: 4900000, guid: 78fd1e114a3f5224fa754b8e7e31d646, type: 3}
+    nextCellStartPosition: {x: 5, y: 0, z: 0}
+    startPosition: {x: -65, y: 30, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+    fieldView: {fileID: 0}
+    cellsToSpawn: 4
+  - openState: 0
+    name: hexagon
+    shape: 0
+    field: {fileID: 4900000, guid: 22e54ebe24f374b499b17599bcf56a4a, type: 3}
+    nextCellStartPosition: {x: 15, y: 0, z: 0}
+    startPosition: {x: -85, y: 70, z: 0}
+    scale: {x: 1.2, y: 1.2, z: 1.2}
+    fieldView: {fileID: 21300000, guid: ea80ef212b03711438401487030034f4, type: 3}
+    cellsToSpawn: 3
+  - openState: 0
+    name: triangle
+    shape: 3
+    field: {fileID: 4900000, guid: 669966d5db9d21549ac8d8e05dede77f, type: 3}
+    nextCellStartPosition: {x: 15, y: 0, z: 0}
+    startPosition: {x: -120, y: 80, z: 0}
+    scale: {x: 0.85, y: 0.85, z: 0.85}
+    fieldView: {fileID: 0}
+    cellsToSpawn: 3
+  - openState: 0
+    name: square
+    shape: 2
+    field: {fileID: 4900000, guid: 3d582cf233a363840a36cf276785d428, type: 3}
+    nextCellStartPosition: {x: 15, y: 0, z: 0}
+    startPosition: {x: -67, y: 40, z: 0}
+    scale: {x: 1.2, y: 1.2, z: 1.2}
+    fieldView: {fileID: 0}
+    cellsToSpawn: 3
+  - openState: 0
+    name: cross
+    shape: 4
+    field: {fileID: 4900000, guid: 275f6a18b9e4dd6409f6c00ff4885c08, type: 3}
+    nextCellStartPosition: {x: 5, y: 0, z: 0}
+    startPosition: {x: -102, y: 45, z: 0}
+    scale: {x: 0.85, y: 0.85, z: 0.85}
+    fieldView: {fileID: 0}
+    cellsToSpawn: 4
+  - openState: 0
+    name: line
+    shape: 6
+    field: {fileID: 4900000, guid: 7c714183f34552c47b096e6696d680f9, type: 3}
+    nextCellStartPosition: {x: 5, y: 0, z: 0}
+    startPosition: {x: -85, y: 20, z: 0}
+    scale: {x: 1.1, y: 1.1, z: 1.1}
+    fieldView: {fileID: 0}
+    cellsToSpawn: 4
+  - openState: 0
+    name: hourglass
+    shape: 5
+    field: {fileID: 4900000, guid: 1c96e28ba88c3614c9cd9600b89e3dcb, type: 3}
+    nextCellStartPosition: {x: 5, y: 0, z: 0}
+    startPosition: {x: -68, y: 20, z: 0}
+    scale: {x: 1.1, y: 1.1, z: 1.1}
+    fieldView: {fileID: 0}
+    cellsToSpawn: 4

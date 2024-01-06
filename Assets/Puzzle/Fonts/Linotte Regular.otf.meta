@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 6c4f218fa68cab6438b128a86b396a4b
+timeCreated: 1491391253
+licenseType: Store
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Linotte-Regular
+  fontNames:
+  - Linotte-Regular
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
