@@ -3,8 +3,8 @@ using UnityEngine.UI;
 
 public class ModeButton : MonoBehaviour
 {
-
-    public Shape thisShape;
+    [SerializeField] private Shape thisShape;
+    [SerializeField] private AudioClip playSound;
 
     void Start()
     {
@@ -13,6 +13,7 @@ public class ModeButton : MonoBehaviour
 
     void ChooseField()
     {
+        SoundManager.Instance.PlaySfx(playSound);
         ModeController.GetCurrentShape(thisShape);
     }
 }

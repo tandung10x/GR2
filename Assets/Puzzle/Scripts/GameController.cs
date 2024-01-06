@@ -5,7 +5,6 @@ using System.Collections.Generic;
 
 public class GameController : MonoBehaviour
 {
-
 	public class Coords
 	{
 		public int i, j;
@@ -22,7 +21,7 @@ public class GameController : MonoBehaviour
 
 	public static GameController instance;
 
-	public GenerateField generator = new GenerateField();
+	GenerateField generator = new GenerateField();
 
 	public RectTransform nextFieldHolder;
 	public RectTransform cellHolder;
@@ -56,7 +55,7 @@ public class GameController : MonoBehaviour
 	public bool isMoving;
 	[HideInInspector]
 	public Stack<Command> commands = new Stack<Command>();
-	[HideInInspector]
+	
 	public int fieldCells;
 
 	Vector3 nextCellScale = new Vector3(0.5f, 0.5f, 0.5f);

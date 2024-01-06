@@ -2,13 +2,10 @@
 
 public class GenerateField
 {
-
 	FieldType currentField;
 
-	int cellCount;
-
-	int sizeW = 34;
-	int sizeH = 30;
+	readonly int sizeW = 34;
+	readonly int sizeH = 30;
 
 	int width;
 	int height;
@@ -31,7 +28,6 @@ public class GenerateField
 		Vector3 nextCellPos = curField.nextCellStartPosition + new Vector3(i * sizeW / 1.3f, j * sizeH / 1.3f);
 		return nextCellPos;
 	}
-
 
 	public ButtonController[,] SetUpField()
 	{

@@ -1,60 +1,25 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Net;
 using UnityEngine;
-
-public enum State
-{
-	MAIN_MENU,
-	IN_GAME,
-	PLAY,
-	PAUSED,
-	GAME_OVER,
-	SHOP,
-	TUTORIAL
-}
-
-public enum Trigger
-{
-	PlayButtonPressed,
-	BackToMainMenu,
-	PauseButtonPressed,
-	InGame,
-	Resume,
-	GoHome,
-	Lose,
-	Reset,
-	Restart,
-	Shop,
-	Tutorial
-}
 
 public class GameManager : MonoBehaviour
 {
-
 	public static GameManager instance;
 
-	[HideInInspector]
 	public FieldType currentField;
 	public StateMachine<State, Trigger> stateMachine;
 	SaveProgressManager saveManager;
 
-	public AudioClip buttonSfx;
-	public AudioClip gameOver;
-	public AudioClip playButton;
-	public RectTransform OnFieldHolders;
-	public TextAsset tutorial;
+	[SerializeField] private AudioClip buttonSfx;
+	[SerializeField] private AudioClip gameOver;
+	[SerializeField] private RectTransform OnFieldHolders;
+	[SerializeField] private TextAsset tutorial;
 
 	public static Action InTutorial;
 	public static Action InContinueForAds;
 	public static Action focusAtBonus;
 
-	[HideInInspector]
 	public string key;
-	[HideInInspector]
 	public int countToClear;
-	[HideInInspector]
 	public int countToSpawn;
 
 	void Awake()
@@ -167,7 +132,7 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	public void Tutorial()
+	void Tutorial()
 	{
 		GameController.instance.InGameContinue(key);
 		GameController.instance.Tutorial(1, 1, 1, 4);
@@ -310,4 +275,30 @@ public class GameManager : MonoBehaviour
 		saveManager.Save();
 		Debug.Log("Progress saved to " + GameConfig.path);
 	}
+}
+
+public enum State
+{
+	MAIN_MENU,
+	IN_GAME,
+	PLAY,
+	PAUSED,
+	GAME_OVER,
+	SHOP,
+	TUTORIAL
+}
+
+public enum Trigger
+{
+	PlayButtonPressed,
+	BackToMainMenu,
+	PauseButtonPressed,
+	InGame,
+	Resume,
+	GoHome,
+	Lose,
+	Reset,
+	Restart,
+	Shop,
+	Tutorial
 }

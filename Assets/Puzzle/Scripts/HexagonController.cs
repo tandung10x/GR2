@@ -1,16 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Events;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Random = UnityEngine.Random;
 
 public class HexagonController : MonoBehaviour
 {
-
-	public Color[] colors;
-	public Color[] textColors;
+	[SerializeField] private Color[] colors;
+	[SerializeField] private Color[] textColors;
 
 	public Image cellImage;
 	public Image skin;

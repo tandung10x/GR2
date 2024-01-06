@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
-public class StateMachine<T, U>
-	where T : IComparable
-	where U : IComparable
+public class StateMachine<T, U>	where T : IComparable where U : IComparable
 {
-
 	Dictionary<T, StateConfig> statesConfig = new Dictionary<T, StateConfig>();
-
 	T currentState;
 
 	public T CurrentState
@@ -42,7 +36,6 @@ public class StateMachine<T, U>
 
 	public class StateConfig
 	{
-
 		public event Action onEnter;
 		public event Action onExit;
 
@@ -78,11 +71,8 @@ public class StateMachine<T, U>
 	}
 }
 
-class Transition<T, U>
-	where T : IComparable
-	where U : IComparable
+class Transition<T, U>	where T : IComparable where U : IComparable
 {
-
 	public T trigger;
 	public U state;
 
